@@ -1,0 +1,31 @@
+{
+  "istasyonlar": [
+    {
+      "istasyon_id": "EREGLI-04",
+      "bolge": "Konya Ereğli Merkez",
+      "doluluk_orani": 94,
+      "sinyal_seviyesi": "Iyi",
+      "donanim_durumu": "Aktif",
+      "elektrik_kesintisi": false,
+      "yedek_istasyon": "EREGLI-02"
+    },
+    {
+      "istasyon_id": "BATTALGAZI-01",
+      "bolge": "Malatya Battalgazi Kampüs",
+      "doluluk_orani": 40,
+      "sinyal_seviyesi": "Zayif",
+      "donanim_durumu": "Ariza",
+      "elektrik_kesintisi": true,
+      "yedek_istasyon": "BATTALGAZI-03"
+    },
+    {
+      "istasyon_id": "KADIKOY-12",
+      "bolge": "İstanbul Kadıköy Rıhtım",
+      "doluluk_orani": 65,
+      "sinyal_seviyesi": "Mukemmel",
+      "donanim_durumu": "Aktif",
+      "elektrik_kesintisi": false,
+      "yedek_istasyon": null
+    }
+  ]
+}

@@ -1,11 +1,14 @@
-[KULLANICI BİLDİRİMİ]
-Müşteri: "Konya Ereğli merkezdeyim, sabahtan beri mobil internetim çok yavaş, video bile açamıyorum."
+=== SENARYO 1: AŞIRI ŞEBEKE YOĞUNLUĞU ===
+Müşteri: "Konya Ereğli merkezdeyim, sabahtan beri internetim çok yavaş, video açılmıyor."
+Beklenen Teşhis: EREGLI-04 istasyonunda %94 aşırı yüklenme tespit edildi.
+Beklenen Self-Healing: Abone trafiği otomatik olarak EREGLI-02 yedek istasyonuna yönlendirildi.
 
-[SİSTEM LOGU (ARKA PLAN VERİSİ)]
-Baz İstasyonu: Ereğli-İstasyon-04
-Durum: Yoğunluk %94, Donanım arızası: Yok, Sinyal Gücü: İyi.
+=== SENARYO 2: DONANIM & ELEKTRİK KESİNTİSİ ===
+Müşteri: "Battalgazi kampüsündeyim, telefonum tamamen 'Servis Yok' diyor, arama yapamıyorum."
+Beklenen Teşhis: BATTALGAZI-01 istasyonunda elektrik kesintisi ve donanım arızası saptandı.
+Beklenen Self-Healing: Sahaya otomatik arıza bildirim bileti (ticket) açıldı, acil jeneratör protokolü başlatıldı.
 
-[BEKLENEN ÇÖZÜM]
-Triyaj: Şebeke kaynaklı aşırı yoğunluk.
-Self-Healing Aksiyonu: Kullanıcı trafiği alternatif komşu sektör olan Ereğli-İstasyon-02'ye yönlendirildi.
-Gerekçe: Baz istasyonundaki doluluk oranı eşik değer olan %85'i aştığı için yük dengeleme protokolü uygulandı.
+=== SENARYO 3: ŞEBEKE NORMAL / BİREYSEL CİHAZ SORUNU ===
+Müşteri: "Kadıköy Rıhtım'dayım, internetim çekmiyor hiçbir yere bağlanamıyorum."
+Beklenen Teşhis: KADIKOY-12 istasyonu tamamen stabil (%65 doluluk, mükemmel sinyal).
+Beklenen Çözüm: Şebeke kaynaklı arıza yok. Müşteriye cihazın uçak modunu açıp kapatması ve APN ayarlarını sıfırlaması talimatı verildi.
