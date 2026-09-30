@@ -1,0 +1,11 @@
+[KULLANICI BİLDİRİMİ]
+Müşteri: "Konya Ereğli merkezdeyim, sabahtan beri mobil internetim çok yavaş, video bile açamıyorum."
+
+[SİSTEM LOGU (ARKA PLAN VERİSİ)]
+Baz İstasyonu: Ereğli-İstasyon-04
+Durum: Yoğunluk %94, Donanım arızası: Yok, Sinyal Gücü: İyi.
+
+[BEKLENEN ÇÖZÜM]
+Triyaj: Şebeke kaynaklı aşırı yoğunluk.
+Self-Healing Aksiyonu: Kullanıcı trafiği alternatif komşu sektör olan Ereğli-İstasyon-02'ye yönlendirildi.
+Gerekçe: Baz istasyonundaki doluluk oranı eşik değer olan %85'i aştığı için yük dengeleme protokolü uygulandı.
